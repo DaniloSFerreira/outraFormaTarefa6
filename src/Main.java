@@ -39,8 +39,8 @@ public class Main {
 				Date dataDate = new SimpleDateFormat("dd/MM/yyyy").parse(dataFrequencia1);
 				Frequencia frequencia = new Frequencia();
 				frequencia.setFrequencia(dataFrequencia1, presenca1);
-				
-				System.out.println(dataFrequencia1 + " " + presenca1);
+								
+				System.out.println(aluno.getNomeAluno()+ " " + frequencia.getDataFrequencia());
 				
 			}
 			int opcao2 = JOptionPane.showConfirmDialog(null, "Deseja adicionar novo aluno?");
