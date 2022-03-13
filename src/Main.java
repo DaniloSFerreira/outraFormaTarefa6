@@ -16,36 +16,12 @@ public class Main {
 		
 		List<Aluno> alunos = new ArrayList<Aluno>();
 		
-		String nomeAluno = JOptionPane.showInputDialog("Insira o nome do aluno:");
-		
-		Aluno aluno = new Aluno();
-		
-		aluno.setNomeAluno(nomeAluno);
-		System.out.println(nomeAluno);
-		
-		String qtdFrequencia = JOptionPane.showInputDialog
-				("Informe a quantidade de datas a serem lançadas:");
-		
-		int qtdFrequenciaInt = Integer.valueOf(qtdFrequencia);
-		
-				
-		for (int i = 1; i <= qtdFrequenciaInt; i++) {
-			String dataFrequencia = JOptionPane.showInputDialog("Informe a data:");
-			String presenca = JOptionPane.showInputDialog("Informe a frequência:");
-						
-			Date dataDate = new SimpleDateFormat("dd/MM/yyyy").parse(dataFrequencia);
-			Frequencia frequencia = new Frequencia();
-			frequencia.setFrequencia(dataFrequencia, presenca);
-			
-		System.out.println(dataFrequencia + " " + presenca);
-			
-		}
 		
 		int opcao = JOptionPane.showConfirmDialog(null, "Deseja adicionar novo aluno?");
 		while (opcao == 0) {
 			String nomeAluno1 = JOptionPane.showInputDialog("Insira o nome do aluno:");
 			
-			Aluno aluno1 = new Aluno();
+			Aluno aluno = new Aluno();
 			
 			aluno.setNomeAluno(nomeAluno1);
 			System.out.println(nomeAluno1);
@@ -53,7 +29,7 @@ public class Main {
 			String qtdFrequencia1 = JOptionPane.showInputDialog
 					("Informe a quantidade de datas a serem lançadas:");
 			
-			int qtdFrequenciaInt1 = Integer.valueOf(qtdFrequencia);
+			int qtdFrequenciaInt1 = Integer.valueOf(qtdFrequencia1);
 			
 					
 			for (int i = 1; i <= qtdFrequenciaInt1; i++) {
@@ -75,3 +51,4 @@ public class Main {
 		}		
 	}
 }
+
